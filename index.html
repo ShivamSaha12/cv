@@ -31,9 +31,26 @@
   ol {
   color: white;
   }
+
+  .glow {
+        font-size: 20px;
+        color: white;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px grey, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue,
+                       0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+        to {
+          text-shadow: 0 0 20px grey, 0 0 30px green, 0 0 40px green, 0 0 50px green,
+                       0 0 60px green, 0 0 70px green, 0 0 80px green;
+        }
+      }
   </style>
 </head>
-
 <body>
   <table cellspacing="20">
     <tr>
@@ -41,7 +58,7 @@
       <td><h1>SHIVAM SAHA</h1>
       <p>Founder of <strong>Myself</strong></p>
       <p>I am a School Student</p>
-      <p>❤ to <strong>Coding</strong> </p></td>
+      <p class="glow">❤ to <strong>Coding</strong> </p></td>
     </tr>
   </table>
   <hr noshade>
